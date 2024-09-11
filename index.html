@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscrição</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nova+Round&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário De Inscrição</h1>
+        <main>
+            <form action="" method="get">
+                <label for="">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="">Cep</label>
+                <input type="text" onblur="coletarcep()" id="cep" name="cep" class="Cep" required>
+                <label for="">Endereco</label>
+                <input type="text" id="endereço" name="Endereco" required>
+                <label for="">Telefone</label>
+                <input type="text" id="telefone" name="Telefone" required>
+                <label for="">Bairro</label>
+                <input type="text" id="bairro" name="Bairro" required>
+                <label for="">Cidade</label>
+                <input type="text" id="cidade" name="Cidade" required>
+
+                <!-- Seleção De Cursos -->
+                <label for="">Cursos Profissionalizantes</label>
+                <select name="cursos" id="cursos">
+                    <option value="Selecione">Selecione</option>
+                    <option value="curso1">informàtica basica</option>
+                    <option value="curso2">Mecânico de motocicletas</option>
+                    <option value="curso3">Eletricista</option>
+                    <option value="curso4">Desenvolvedor de sistmeas</option>
+                </select><br><br>
+
+                <!-- Genêro De Radio Button -->
+                <label for="">genero</label><br><br>
+                <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                <label for="masculino">Masculino</label><br><br>
+                <input type="radio" id="feminino" name="genero" value="Feminino" required>
+                <label for="feminino">Feminino</label><br><br>
+
+                <!-- Adicionar Caixas De Seleção -->
+                <label for="">Unidade Operacional</label> <br><br>
+                <input type="checkbox" id="cetcc" name="cursos" value="CETCC">
+                <label for="CETCC">CETCC</label>
+                <input type="checkbox" id="cetafaju" name="CETAFAJU" value="CETAFAJU">
+                <label for="CETAFAJU">CETAFAJU</label>
+                <input type="checkbox" id="cetafest" name="cursos" value="CETAFEST">
+                <label for="CETAFEST">CETAFEST</label>
+                <input type="checkbox" id="ceticc" name="cursos" value="CETICC">
+                <label for="CETICC">CETICC</label><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+
+</html>
